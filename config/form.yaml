@@ -83,7 +83,7 @@ tabs:
         keywords:
             label: Keywords
             comment: Some useful keywords for the website
-            default: "Bootstart, Al3xTig3r, octobercms, theme"
+            default: "bootstart, bootstrap, al3xtig3r, octobercms, theme"
             span: left
             tab: SEO
         robots:

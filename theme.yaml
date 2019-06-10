@@ -3,7 +3,7 @@ description: "A simple and clean Bootstrap-based theme for OctoberCMS to start y
 previewImage: "assets/images/theme/preview.png"
 author: "Al3xTig3r"
 homepage: "https://github.com/al3xtig3r/bootstart"
-code: "fresh-bootstart"
+code: "bootstart"
 
 form: config/form.yaml
 translate: config/lang.yaml

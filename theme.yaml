@@ -1,8 +1,8 @@
-name: "Fresh Bootstart v1.0"
-description: "A Bootstrap-based theme for a fresh (and easy) start!"
-previewImage: "assets/images/preview.png"
-author: "al3xtig3r"
-homepage: "https://github.com/al3xtig3r/fresh-bootstart-theme"
+name: "Bootstart v1.0"
+description: "A simple and clean Bootstrap-based theme for OctoberCMS to start your new project!"
+previewImage: "assets/images/theme/preview.png"
+author: "Al3xTig3r"
+homepage: "https://github.com/al3xtig3r/bootstart"
 code: "fresh-bootstart"
 
 form: config/form.yaml

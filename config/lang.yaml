@@ -1,0 +1,39 @@
+en:
+  layout.header.brand: Bootstart
+  layout.header.nav.toggler.toggle: Toggle navigation
+  layout.header.nav.current: (current)
+  layout.header.nav.home: Home
+  layout.header.nav.link: Link
+  layout.header.nav.dropdown: Dropdown
+  layout.header.nav.dropdown.action: Action
+  layout.header.nav.dropdown.another: Another action
+  layout.header.nav.dropdown.somethingelse: Something else here
+  layout.header.nav.disabled: Disabled
+  layout.header.nav.search: Search
+
+  layout.footer.left: <del>&copy;</del> Bootstart, :date
+  layout.footer.right: Enjoy this theme, it has been made with :love!
+  layout.footer.right.love: LOVE
+
+  index.title: Bootstart
+  index.text: A simple and clean Bootstrap-based theme for OctoberCMS to start your new project!
+it:
+  layout.header.brand: Bootstart
+  layout.header.nav.toggler.toggle: Attiva/disattiva navigazione
+  layout.header.nav.current: (corrente)
+  layout.header.nav.home: Home
+  layout.header.nav.link: Link
+  layout.header.nav.dropdown: Dropdown
+  layout.header.nav.dropdown.action: Azione
+  layout.header.nav.dropdown.another: Altra azione
+  layout.header.nav.dropdown.somethingelse: Qualcos'altro qui
+  layout.header.nav.disabled: Disabilitato
+  layout.header.nav.search: Cerca
+
+  layout.footer.left: <del>&copy;</del> Bootstart, :date
+  layout.footer.right: Goditi questo tema, è stato creato con :love!
+  layout.footer.right.love: AMORE
+
+  index.title: Bootstart
+  index.text: Un tema semplice e pulito per OctoberCMS basato su Bootstrap per iniziare il tuo nuovo progetto!
+  

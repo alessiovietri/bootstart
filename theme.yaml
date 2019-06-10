@@ -1,0 +1,13 @@
+name: "Fresh Bootstart v1.0"
+description: "A Bootstrap-based theme for a fresh (and easy) start!"
+previewImage: "assets/images/preview.png"
+author: "al3xtig3r"
+homepage: "https://github.com/al3xtig3r/fresh-bootstart-theme"
+code: "fresh-bootstart"
+
+form: config/form.yaml
+translate: config/lang.yaml
+
+require:
+  - RainLab.Translate
+  - Al3xTig3r.FooterSignature

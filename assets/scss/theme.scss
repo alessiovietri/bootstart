@@ -1,0 +1,57 @@
+/*!
+ * Bootstart v1.0 for OctoberCMS
+ * by
+ * Al3xTig3r (Alessio Vietri) - https://alessiovietri.it
+ */
+
+/**
+ *  LAYOUT
+ */
+@mixin override-colors($args...) {
+    @debug keywords($args);
+
+    @each $name, $color in keywords($args) {
+        .text-#{$name}{
+            color: $color !important;
+        }
+        .bg-#{$name}{
+            background-color: $color !important;
+        }
+    }
+}
+@include override-colors(
+    $primary: $primary-color,
+    $secondary: $secondary-color,
+    $success: $success-color,
+    $danger: $danger-color,
+    $warning: $warning-color,
+    $info: $info-color,
+    $light: $light-color,
+    $dark: $dark-color,
+    $body: $body-color,
+    $muted: $muted-color,
+);
+
+/**
+ *  INDEX
+ */
+#index-main{
+    height: 100vh;
+
+    div{
+        &:not(.jumbotron){
+            height: 100%;
+        }
+    }
+}
+
+/**
+ *  OVERRIDES
+ */
+.navbar{
+    .navbar-brand{
+        img{
+            max-height: 30px;
+        }
+    }
+}

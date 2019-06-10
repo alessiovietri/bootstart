@@ -1,0 +1,217 @@
+tabs:
+    fields:
+        title:
+            label: Title
+            comment: The title of the website
+            default: "Bootstart"
+            span: left
+            tab: Main
+        author:
+            label: Author
+            comment: The author of the website
+            default: "Al3xTig3r, https://octobercms.com/author/Al3xTig3r"
+            span: right
+            tab: Main
+        prefix_suffix_string:
+            label: Prefix / Suffix string
+            comment: A string to be added as prefix, or suffix, to the title
+            default: " | by Al3xTig3r"
+            span: left
+            tab: Main
+        prefix_suffix_switch:
+            label: Prefix, or suffix?
+            comment: Choose to use the string as prefix, or as suffix
+            type: radio
+            options:
+                prefix: Prefix
+                suffix: Suffix
+            default: suffix
+            span: right
+            tab: Main
+        description:
+            label: Description
+            comment: The description of the website
+            default: "A simple and clean Bootstrap-based theme for OctoberCMS to start your new project!"
+            type: textarea
+            tab: Main
+        font_awesome:
+            label: Font Awesome (5.8.2)
+            comment: Choose whether to include Font Awesome, or not
+            type: switch
+            default: true
+            span: left
+            tab: Main
+        font_awesome_link:
+            label: Font Awesome URL
+            comment: If you want, you can insert another URL to load Font Awesome
+            default: ""
+            span: right
+            tab: Main
+        animate:
+            label: Animate CSS (3.7.2)
+            comment: Choose whether to include Animate CSS, or not
+            type: switch
+            default: true
+            span: left
+            tab: Main
+        animate_link:
+            label: Animate CSS URL
+            comment: If you want, you can insert another URL to load Animate CSS
+            default: ""
+            span: right
+            tab: Main
+        slick:
+            label: slick Carousel (1.8.1)
+            comment: Choose whether to include slick Carousel, or not
+            type: switch
+            default: true
+            span: left
+            tab: Main
+        slick_css_link:
+            label: slick Carousel CSS URL
+            comment: If you want, you can insert another URL to load slick Carousel CSS
+            default: ""
+            span: right
+            tab: Main
+        slick_js_link:
+            label: slick Carousel JS URL
+            comment: If you want, you can insert another URL to load slick Carousel JS
+            default: ""
+            span: right
+            tab: Main
+
+        keywords:
+            label: Keywords
+            comment: Some useful keywords for the website
+            default: "Bootstart, Al3xTig3r, octobercms, theme"
+            span: left
+            tab: SEO
+        robots:
+            label: Robots
+            comment: Robots meta tag for the website
+            default: "index, follow"
+            span: right
+            tab: SEO
+        default_canonical:
+            label: Use default URL as canonical URL
+            comment: If the canonical URL is not provided, then use the default one
+            type: switch
+            default: true
+            span: left
+            tab: SEO
+        open_graph_section:
+            label: Open Graph
+            type: section
+            tab: SEO
+        open_graph:
+            label: Open Graph
+            comment: Do you want to generate Open Graph meta tags?
+            type: switch
+            default: true
+            span: left
+            tab: SEO
+        og_title:
+            label: OG Title
+            comment: og:title meta tag
+            default: "Bootstart | by Al3xTig3r"
+            span: left
+            tab: SEO
+        og_type:
+            label: OG Type
+            comment: og:type meta tag
+            default: "website"
+            span: right
+            tab: SEO
+        og_description:
+            label: OG Description
+            comment: og:description meta tag
+            default: "A simple and clean Bootstrap-based theme for OctoberCMS to start your new project!"
+            type: textarea
+            tab: SEO
+        og_site_name:
+            label: OG Site Name
+            comment: og:site_name meta tag
+            default: "Bootstart"
+            span: left
+            tab: SEO
+        fb_app_id:
+            label: FB App ID
+            comment: Connect with your Facebook app using the Facebook app ID
+            span: left
+            tab: SEO
+
+        # Colors
+        colors_section:
+            label: Default colors
+            type: section
+            tab: Main
+        primary_color:
+            label: Primary color
+            type: colorpicker
+            availableColors: ['#007bff']
+            assetVar: 'primary-color'
+            span: left
+            tab: Main
+        secondary_color:
+            label: Secondary color
+            type: colorpicker
+            availableColors: ['#6c757d']
+            assetVar: 'secondary-color'
+            span: right
+            tab: Main
+        success_color:
+            label: Success color
+            type: colorpicker
+            availableColors: ['#28a745']
+            assetVar: 'success-color'
+            span: left
+            tab: Main
+        danger_color:
+            label: Danger color
+            type: colorpicker
+            availableColors: ['#dc3545']
+            assetVar: 'danger-color'
+            span: right
+            tab: Main
+        warning_color:
+            label: Warning color
+            type: colorpicker
+            availableColors: ['#ffc107']
+            assetVar: 'warning-color'
+            span: left
+            tab: Main
+        info_color:
+            label: Info color
+            type: colorpicker
+            availableColors: ['#17a2b8']
+            assetVar: 'info-color'
+            span: right
+            tab: Main
+        light_color:
+            label: Light color
+            type: colorpicker
+            availableColors: ['#f8f9fa']
+            assetVar: 'light-color'
+            span: left
+            tab: Main
+        dark_color:
+            label: Dark color
+            type: colorpicker
+            availableColors: ['#343a40']
+            assetVar: 'dark-color'
+            span: right
+            tab: Main
+        body_color:
+            label: Body color
+            type: colorpicker
+            availableColors: ['#212529']
+            assetVar: 'body-color'
+            span: left
+            tab: Main
+        muted_color:
+            label: Muted color
+            type: colorpicker
+            availableColors: ['#6c757d']
+            assetVar: 'muted-color'
+            span: right
+            tab: Main

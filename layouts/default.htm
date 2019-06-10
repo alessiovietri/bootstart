@@ -1,0 +1,109 @@
+[localePicker]
+
+[footerSignature]
+==
+<!doctype html>
+<html lang="{{ activeLocale }}">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- INFO -->
+    {% set title = (this.page.title ? this.page.title : this.theme.title) %}
+    {% if this.theme.prefix_suffix_switch == 'prefix' %}
+        {% set title = this.theme.prefix_suffix_string ~ ' ' ~ title %}
+    {% elseif this.theme.prefix_suffix_switch == 'suffix' %}
+        {% set title = title ~ ' ' ~ this.theme.prefix_suffix_string %}
+    {% endif %}
+    <title>{{ title }}</title>
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="{{ this.page.description ? this.page.description : this.theme.description }}" />
+    <link rel="icon" href="{{ 'assets/images/theme/icon.png'|theme }}" />
+    <meta name="author" content="{{ this.page.author ? this.page.author : this.theme.author }}" />
+    <meta name="keywords" content="{{ this.page.keywords ? this.page.keywords : this.theme.keywords }}" />
+    <meta name="robots" content="{{ this.page.robots ? this.page.robots : this.theme.robots }}" />
+    {% if this.page.canonical or this.theme.default_canonical %}
+    <link rel="canonical" href="{{ this.page.canonical ? this.page.canonical : ''|page }}">
+    {% endif %}
+
+    <!-- SEO -->
+    {% if this.theme.open_graph %}
+    <meta name="og:title" content="{{ this.theme.og_title }}"/>
+    <meta name="og:description" content="{{ this.theme.og_description }}"/>
+    <meta name="og:type" content="{{ this.theme.og_type }}"/>
+    <meta name="og:url" content="{{ ''|page }}"/>
+    <meta name="og:site_name" content="{{ this.theme.og_site_name }}"/>
+    {% endif %}
+
+    {% if this.theme.fb_app_id %}
+    <meta name="fb:page_id" content="{{ this.theme.fb_app_id }}" />
+    {% endif %}
+
+    <!-- STYLES -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% if this.theme.font_awesome %}
+    <!-- Font Awesome -->
+        {% if this.theme.font_awesome_link != null and this.theme.font_awesome_link != '' %}
+    <link href="{{ this.theme.font_awesome_link }}" rel="stylesheet" />
+        {% else %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+        {% endif %}
+    {% endif %}
+    {% if this.theme.animate %}
+    <!-- Animate CSS -->
+        {% if this.theme.animate_link != null and this.theme.animate_link != '' %}
+    <link href="{{ this.theme.animate_link }}" rel="stylesheet" />
+        {% else %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+        {% endif %}
+    {% endif %}
+    {% if this.theme.slick %}
+    <!-- slick Carousel -->
+        {% if this.theme.slick_css_link != null and this.theme.slick_css_link != '' %}
+    <link href="{{ this.theme.slick_css_link }}" rel="stylesheet" />
+        {% else %}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        {% endif %}
+    {% endif %}
+    <!-- Theme SASS -->
+    <link href="{{ ['assets/scss/theme.scss']|theme }}" rel="stylesheet" />
+    <!-- Your styles -->
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet" />
+    <link href="{{ ['assets/scss/style.scss']|theme }}" rel="stylesheet" />
+
+    {% styles %}
+</head>
+<body>
+    <header id="main-header">
+        {% partial 'theme/header' %}
+    </header>
+
+    <!-- PAGE CONTENT -->
+    {% page %}
+
+    <footer id="main-footer">
+        {% partial 'theme/footer' %}
+    </footer>
+
+    <!-- BODY SCRIPTS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {% if this.theme.slick %}
+    <!-- slick Carousel -->
+        {% if this.theme.slick_js_link != null and this.theme.slick_js_link != '' %}
+    <script src="{{ this.theme.slick_js_link }}"></script>
+        {% else %}
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        {% endif %}
+    {% endif %}
+    <!-- Your scripts -->
+    <script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+</body>
+</html>

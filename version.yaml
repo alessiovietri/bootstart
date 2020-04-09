@@ -1,1 +1,6 @@
 1.0.0: Theme initialization
+1.1.0:
+- Added more plugins
+- Added Twitter meta tags
+- Added default microdata
+- Added border-*, btn-* and badge-* classes to theme

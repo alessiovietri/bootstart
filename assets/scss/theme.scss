@@ -17,6 +17,16 @@
         .bg-#{$name}{
             background-color: $color !important;
         }
+        .border-#{$name}{
+            background-color: $color !important;
+        }
+        .btn-#{$name}{
+            background-color: $color !important;
+            border-color: $color !important;
+        }
+        .badge-#{$name}{
+            background-color: $color !important;
+        }
     }
 }
 @include override-colors(

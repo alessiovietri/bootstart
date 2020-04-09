@@ -99,6 +99,7 @@ tabs:
             default: true
             span: left
             tab: SEO
+
         open_graph_section:
             label: Open Graph
             type: section
@@ -134,9 +135,66 @@ tabs:
             default: "Bootstart"
             span: left
             tab: SEO
+
+        twitter_section:
+            label: Twitter
+            type: section
+            tab: SEO
+        twitter:
+            label: Twitter
+            comment: Do you want to generate Twitter meta tags?
+            type: switch
+            default: true
+            span: left
+            tab: SEO
+        twitter_card:
+            label: Twitter Card
+            comment: twitter:card meta tag
+            default: summary_large_image
+            span: left
+            tab: SEO
+        twitter_title:
+            label: Twitter Title
+            comment: twitter:title meta tag
+            span: right
+            tab: SEO
+        twitter_description:
+            label: Twitter Description
+            comment: twitter:description meta tag
+            span: left
+            tab: SEO
+        twitter_site:
+            label: Twitter Site
+            comment: twitter:site meta tag
+            default: "@thiswebsite"
+            span: right
+            tab: SEO
+        twitter_creator:
+            label: Twitter Creator
+            comment: twitter:creator meta tag
+            default: "@al3xtig3r"
+            span: left
+            tab: SEO
+
+        facebook_section:
+            label: Facebook
+            type: section
+            tab: SEO
         fb_app_id:
             label: FB App ID
             comment: Connect with your Facebook app using the Facebook app ID
+            span: left
+            tab: SEO
+
+        micordata_section:
+            label: Microdata
+            type: section
+            tab: SEO
+        microdata:
+            label: Microdata
+            comment: Do you want to generate microdata?
+            type: switch
+            default: true
             span: left
             tab: SEO
 

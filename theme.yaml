@@ -1,4 +1,4 @@
-name: "Bootstart v1.0"
+name: "Bootstart v1.1"
 description: "A simple and clean Bootstrap-based theme for OctoberCMS to start your new project!"
 previewImage: "assets/images/theme/preview.png"
 author: "Al3xTig3r"
@@ -11,3 +11,6 @@ translate: config/lang.yaml
 require:
   - RainLab.Translate
   - Al3xTig3r.FooterSignature
+  - RainLab.Sitemap
+  - Zen.Robots
+  - DmitryBykov.Htmlminify

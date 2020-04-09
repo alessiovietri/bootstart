@@ -36,8 +36,28 @@
     <meta name="og:site_name" content="{{ this.theme.og_site_name }}"/>
     {% endif %}
 
+    {% if this.theme.twitter %}
+    <meta name="twitter:card" content="{{ this.theme.twitter_card }}">
+    <meta name="twitter:image" content="{{ 'assets/images/theme/preview.png'|theme }}">
+    <meta name="twitter:title" content="{{ this.theme.twitter_title }}">
+    <meta name="twitter:description" content="{{ this.theme.twitter_description }}">
+    <meta name="twitter:site" content="{{ this.theme.twitter_site }}"/>
+    <meta name="twitter:creator" content="{{ this.theme.twitter_creator }}"/>
+    {% endif %}
+
     {% if this.theme.fb_app_id %}
     <meta name="fb:page_id" content="{{ this.theme.fb_app_id }}" />
+    {% endif %}
+
+    {% if this.theme.microdata %}
+    <script type='application/ld+json'>
+        {
+            "@context": "http:\/\/schema.org",
+            "@type": "WebSite",
+            "url": "{{ ''|page }}",
+            "name": "{{ title }}"
+        }
+    </script>
     {% endif %}
 
     <!-- STYLES -->
